@@ -301,9 +301,9 @@
           <p class="mt-4 text-sm leading-6 text-gray-300">The essentials to provide your best work for clients.</p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span id="first-price" class="text-4xl font-bold tracking-tight text-white">$15</span>
+            <span id="freelancer-price" class="text-4xl font-bold tracking-tight text-white">$15</span>
             <!-- Payment frequency, update based on frequency toggle state -->
-            <span class="text-sm font-semibold leading-6 text-gray-300">/month</span>
+            <span id="freelancer-text" class="text-sm font-semibold leading-6 text-gray-300">/month</span>
           </p>
           <a id="buy-plan" href="#" aria-describedby="tier-freelancer"
             class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white">Buy
@@ -353,9 +353,9 @@
           <p class="mt-4 text-sm leading-6 text-gray-300">A plan that scales with your rapidly growing business.</p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-4xl font-bold tracking-tight text-white">$30</span>
+            <span id="startup-price" class="text-4xl font-bold tracking-tight text-white">$30</span>
             <!-- Payment frequency, update based on frequency toggle state -->
-            <span class="text-sm font-semibold leading-6 text-gray-300">/month</span>
+            <span id="startup-text" class="text-sm font-semibold leading-6 text-gray-300">/month</span>
           </p>
           <a id="buy-second-plan" href="#" aria-describedby="tier-startup"
             class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500">Buy
@@ -411,9 +411,10 @@
           <p class="mt-4 text-sm leading-6 text-gray-300">Dedicated support and infrastructure for your company.</p>
           <p class="mt-6 flex items-baseline gap-x-1">
             <!-- Price, update based on frequency toggle state -->
-            <span class="text-4xl font-bold tracking-tight text-white">$48</span>
+            <span id="enterprise-price" class="text-4xl font-bold tracking-tight text-white">$48
+            </span>
             <!-- Payment frequency, update based on frequency toggle state -->
-            <span class="text-sm font-semibold leading-6 text-gray-300">/month</span>
+            <span id="enterprise-text" class="text-sm font-semibold leading-6 text-gray-300">/month</span>
           </p>
           <a id="buy-third-card" href="#" aria-describedby="tier-enterprise"
             class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white">Buy
@@ -472,6 +473,11 @@
 
       </div>
     </div>
+  </div>
+  <div class="text-center">
+    <button onclick="paymentAnnually()" class="bg-emerald-500 p-3 rounded-xl m-3 ">
+      REMOVE
+    </button>
   </div>
 
   <!-- Trusted -->

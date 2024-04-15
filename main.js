@@ -102,20 +102,12 @@ function spotlightThird() {
 
 const monthly = document.querySelector('#monthly')
 const annually = document.querySelector('#annually')
-const firstPrice = document.querySelector('#first-price')
-
-function paymentMonthly() {
-    annually.classList.remove('bg-indigo-500')
-    monthly.classList.add('bg-indigo-500')
-}
 
 
-function paymentAnnually() {
-    annually.classList.add('bg-indigo-500')
-    monthly.classList.remove('bg-indigo-500')
 
 
-}
+
+
 // function prova() {
 //     firstCard.classList.add('ring-2')
 //     firstCard.classList.add('ring-indigo-500')
@@ -146,3 +138,46 @@ toggleSwitch.addEventListener('change', function () {
         toggleLabel.classList.remove('light-theme')
     }
 });
+
+
+
+
+// function changeToAnnually() {
+
+
+// }
+
+function paymentMonthly() {
+    const freelancerPrice = document.querySelector('#freelancer-price')
+    const startupPrice = document.querySelector('#startup-price')
+    const enterprisePrice = document.querySelector('#enterprise-price')
+    const freelancerText = document.querySelector('#freelancer-text')
+    const startupText = document.querySelector('#startup-text')
+    const enterpriseText = document.querySelector('#enterprise-text')
+    annually.classList.remove('bg-indigo-500')
+    monthly.classList.add('bg-indigo-500')
+    freelancerPrice.innerHTML = '$15'
+    startupPrice.innerHTML = '$30'
+    enterprisePrice.innerHTML = '$48'
+    startupText.innerHTML = '/month'
+    enterpriseText.innerHTML = '/month'
+    freelancerText.innerHTML = '/month'
+}
+
+function paymentAnnually() {
+    const freelancerPrice = document.querySelector('#freelancer-price')
+    const startupPrice = document.querySelector('#startup-price')
+    const enterprisePrice = document.querySelector('#enterprise-price')
+    const freelancerText = document.querySelector('#freelancer-text')
+    const startupText = document.querySelector('#startup-text')
+    const enterpriseText = document.querySelector('#enterprise-text')
+    annually.classList.add('bg-indigo-500')
+    monthly.classList.remove('bg-indigo-500')
+
+    freelancerPrice.innerHTML = '$144'
+    startupPrice.innerHTML = '$288'
+    enterprisePrice.innerHTML = '$576'
+    startupText.innerHTML = '/year'
+    enterpriseText.innerHTML = '/year'
+    freelancerText.innerHTML = '/year'
+}

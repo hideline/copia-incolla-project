@@ -2,6 +2,7 @@
 export default {
   darkMode: 'selector',
   content: [
+    "./main.js",
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
