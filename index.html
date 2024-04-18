@@ -281,13 +281,13 @@
           class="grid grid-cols-2 gap-x-1 rounded-full bg-white/5 p-1 text-center text-xs font-semibold leading-5 text-white">
           <legend class="sr-only">Payment frequency</legend>
           <!-- Checked: "bg-indigo-500" -->
-          <label id="monthly" onclick="paymentMonthly()" class="cursor-pointer rounded-full px-2.5 py-1 bg-indigo-500 ">
-            <input type="radio" name="frequency" value="monthly" class="sr-only">
+          <label id="monthly"  class="cursor-pointer rounded-full px-2.5 py-1 bg-indigo-500 ">
+            <input onclick="paymentMonthly()" type="radio" name="frequency" value="monthly" class="sr-only">
             <span> Monthly</span>
           </label>
           <!-- Checked: "bg-indigo-500" -->
-          <label id="annually" onclick="paymentAnnually()" class="cursor-pointer rounded-full px-2.5 py-1">
-            <input type="radio" name="frequency" value="annually" class="sr-only" checked="bg-red-500">
+          <label id="annually"  class="cursor-pointer rounded-full px-2.5 py-1">
+            <input onclick="paymentAnnually()" type="radio" name="frequency" value="annually" class="sr-only" checked="bg-red-500">
             <span>Annually</span>
           </label>
         </fieldset>
