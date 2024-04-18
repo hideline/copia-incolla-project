@@ -2,6 +2,8 @@
 export default {
   darkMode: 'selector',
   content: [
+    "./prova.html",
+    "./prova.js",
     "./main.js",
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx,html}",
